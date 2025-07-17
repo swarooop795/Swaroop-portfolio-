@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Swaroop Nairy - Portfolio_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaroop Nairy - Portfolio</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/Subramanya R/Downloads/nairy/src/App.css">@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+:root {
+  --primary-color: #2043e0;
+  --secondary-color: #3a0ca3;
+  --light-color: #f8f9fa;
+  --dark-color: #212529;
+  --text-color: #495057;
+  --bg-color: #ffffff;
+  --card-bg: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Header Styles */
+
+header {
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color), #7209b7);
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+  opacity: 0.8;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+  position: relative;
+  transition: var(--transition);
+}
+
+.profile-img:hover {
+  transform: scale(1.08) rotate(2deg);
+  border-color: var(--accent-color);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 4.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(45deg, #ffffff, #f8f9fa, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: nameGlow 3s ease-in-out infinite alternate;
+  letter-spacing: 2px;
+  transform: perspective(500px) rotateX(5deg);
+}
+
+@keyframes nameGlow {
+  0% {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 255, 255, 0.5), 0 0 40px rgba(247, 37, 133, 0.3);
+  }
+}
+
+.tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contact-info a {
+  color: var(--light-color);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contact-info a:hover {
+  color: var(--accent-color);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.4rem;
+  transition: var(--transition);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+  text-decoration: none;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-links a:hover {
+  color: var(--accent-color);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: var(--transition);
+  box-shadow: 0 6px 20px rgba(247, 37, 133, 0.4);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.resume-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(247, 37, 133, 0.6);
+  
+}
+
+.resume-btn i {
+  margin-right: 0.5rem;
+}
+
+/* Section Styles */
+
+section {
+  padding: 4rem 0;
+  position: relative;
+}
+
+section:nth-child(even) {
+  background-color: var(--light-color);
+}
+
+h2 {
+  color: var(--secondary-color);
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+}
+
+.profile-text {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* Card Styles */
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  border-left: 5px solid var(--primary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  border-left-color: var(--accent-color);
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+.education-header, .involvement-header, .project-header, .achievement-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.education-title, .involvement-title, .project-title, .achievement-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--dark-color);
+}
+
+.education-date, .involvement-date, .project-date, .achievement-date {
+  color: var(--primary-color);
+  font-weight: 600;
+  background-color: rgba(67, 97, 238, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.education-institution, .project-tech {
+  font-style: italic;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tech span {
+  background-color: rgba(67, 97, 238, 0.1);
+  color: var(--primary-color);
+  padding: 0.4rem 1rem;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 500;
+  border: 1px solid rgba(67, 97, 238, 0.2);
+  transition: var(--transition);
+}
+
+.project-tech span:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
+}
+
+.project-description, .involvement-description, .achievement-description {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.involvement-description {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.involvement-description li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.involvement-description li::before {
+  content: '▹';
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.project-link a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.project-link a:hover {
+  color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+.project-link a i {
+  font-size: 0.9rem;
+}
+
+/* Skills Section */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-category {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  border-top: 3px solid var(--primary-color);
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-top-color: var(--accent-color);
+}
+
+.skill-category h3 {
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.skill-category h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.skill-tag {
+  display: inline-block;
+  background-color: rgba(67, 97, 238, 0.1);
+  color: var(--primary-color);
+  padding: 0.6rem 1.4rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: var(--transition);
+  border: 1px solid rgba(67, 97, 238, 0.2);
+  cursor: pointer;
+}
+
+.skill-tag:hover {
+  background-color: var(--primary-color);
+  color: white;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 15px rgba(67, 97, 238, 0.3);
+}
+
+/* Additional Info */
+
+.additional-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.info-section {
+  background-color: var(--card-bg);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  border-top: 3px solid var(--primary-color);
+}
+
+.info-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-top-color: var(--accent-color);
+}
+
+.info-section h3 {
+  margin-bottom: 1.5rem;
+  color: var(--dark-color);
+  font-size: 1.3rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.info-section h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.info-list {
+  list-style-type: none;
+}
+
+.info-list li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.8rem;
+  line-height: 1.6;
+}
+
+.info-list li::before {
+  content: '▹';
+  color: var(--accent-color);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color), #7209b7);
+  color: white;
+  text-align: center;
+  padding: 2.5rem 0;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  margin-bottom: 1rem;
+}
+
+.back-to-top {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+  border-radius: 50%;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-top:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section .container > * {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+section .container > *:nth-child(1) { animation-delay: 0.1s; }
+
+section .container > *:nth-child(2) { animation-delay: 0.2s; }
+
+section .container > *:nth-child(3) { animation-delay: 0.3s; }
+
+section .container > *:nth-child(4) { animation-delay: 0.4s; }
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  h1 {
+    font-size: 3.8rem;
+    letter-spacing: 1.5px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  section {
+    padding: 3rem 0;
+  }
+  
+  .education-header, .project-header, .achievement-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .education-date, .project-date, .achievement-date {
+    margin-top: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  h1 {
+    font-size: 3.2rem;
+    letter-spacing: 1px;
+  }
+  
+  .tagline {
+    font-size: 1rem;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}</style><style type="text/css" data-vite-dev-id="C:/Users/Subramanya R/Downloads/nairy/src/index.css">*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*//*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+  border-style: solid; /* 2 */
+  border-color: #e5e7eb; /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -moz-tab-size: 4; /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4; /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-feature-settings: normal; /* 5 */
+  font-variation-settings: normal; /* 6 */
+  -webkit-tap-highlight-color: transparent; /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0; /* 1 */
+  line-height: inherit; /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0; /* 1 */
+  color: inherit; /* 2 */
+  border-top-width: 1px; /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
+  font-feature-settings: normal; /* 2 */
+  font-variation-settings: normal; /* 3 */
+  font-size: 1em; /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0; /* 1 */
+  border-color: inherit; /* 2 */
+  border-collapse: collapse; /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-feature-settings: inherit; /* 1 */
+  font-variation-settings: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  font-weight: inherit; /* 1 */
+  line-height: inherit; /* 1 */
+  letter-spacing: inherit; /* 1 */
+  color: inherit; /* 1 */
+  margin: 0; /* 2 */
+  padding: 0; /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button; /* 1 */
+  background-color: transparent; /* 2 */
+  background-image: none; /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1; /* 1 */
+  color: #9ca3af; /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block; /* 1 */
+  vertical-align: middle; /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><div class="App"><header><div class="container"><h1>Swaroop Nairy</h1><p class="tagline">Computer Science &amp; Engineering (Data Science)</p><div class="contact-info"><span><i class="fas fa-envelope"></i> swaroopnairy@gmail.com</span><span><i class="fas fa-phone"></i> +91 8951240738</span></div><div class="social-links"><a href="https://www.linkedin.com/in/swaroop-nairy-aa615526a" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a><a href="https://github.com/swarooop795" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></div><a href="https://res.cloudinary.com/dtjjgiitl/image/upload/q_auto:good,f_auto,fl_progressive/v1752675622/fjqca7kpojdfjmewe4px.jpg" target="_blank" rel="noopener noreferrer" class="resume-btn"><i class="fas fa-file-alt"></i> Resume</a></div></header><main class="container"><section id="profile"><h2>Profile</h2><p class="profile-text">Computer Science and Data Science undergraduate with foundational knowledge in Python, web development, and data science. Experienced in projects involving fraud detection, network security, and management systems. Passionate about exploring emerging technologies and continuously enhancing technical skills.</p></section><section id="education"><h2>Education</h2><div class="card"><div class="education-header"><span class="education-title">Bachelor of Engineering in Computer Science (Data Science)</span><span class="education-date">2022–2026</span></div><div class="education-institution">Sahyadri College of Engineering and Management, Adyar, Mangalore</div><div>CGPA: 8.51</div></div><div class="card"><div class="education-header"><span class="education-title">State Board – PCMB</span><span class="education-date">2020–2022</span></div><div class="education-institution">Viveka Pre University College, Kota, Udupi</div><div>Score: 87.8%</div></div><div class="card"><div class="education-header"><span class="education-title">State Board – SSLC</span><span class="education-date">2017–2020</span></div><div class="education-institution">Government High School, Brahmavara, Udupi</div><div>Score: 89.92%</div></div></section><section id="involvement"><h2>Involvement</h2><div class="card"><div class="involvement-header"><span class="involvement-title">Social Innovation Project</span><span class="involvement-date">2022–2023</span></div><ul class="involvement-description"><li>Completed a year-long program focused on innovative solutions to social issues.</li><li>Demonstrated good performance in project-based learning and community-focused activities.</li><li>Gained practical experience in applying design thinking and innovation in real-world scenarios.</li></ul></div></section><section id="projects"><h2>Projects</h2><div class="card"><div class="project-header"><span class="project-title">Credit Card Fraud Detection</span></div><div class="project-tech"><span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span></div><p class="project-description">A system to detect fraudulent credit card transactions using machine learning algorithms.</p><div class="project-link"><a href="https://github.com/swarooop795/Credit-Card-Fraud-Detection.git" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View on GitHub</a></div></div><div class="card"><div class="project-header"><span class="project-title">Gym Membership Management System</span></div><div class="project-tech"><span>MongoDB</span><span>Python</span><span>HTML</span><span>CSS</span><span>Flask</span></div><p class="project-description">A comprehensive system to manage gym memberships and member details.</p><div class="project-link"><a href="https://github.com/swarooop795/MongoDB-Gym-Membership-Management-System.git" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View on GitHub</a></div></div><div class="card"><div class="project-header"><span class="project-title">Secure Communication and Intrusion Detection System</span></div><div class="project-tech"><span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span><span>Scapy</span></div><p class="project-description">A system for secure communication and detecting network intrusions.</p><div class="project-link"><a href="https://github.com/swarooop795/secure-comm-IDS.git" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View on GitHub</a></div></div><div class="card"><div class="project-header"><span class="project-title">College Management System</span></div><div class="project-tech"><span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span></div><p class="project-description">Streamline college management tasks such as result viewing, updating study materials, and sharing college updates.</p><div class="project-link"><a href="https://github.com/swarooop795/College-Management-System.git" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View on GitHub</a></div></div><div class="card"><div class="project-header"><span class="project-title">WiFi Analyser</span></div><div class="project-tech"><span>Python</span><span>SQLite</span></div><p class="project-description">Calculate the inserted WiFi signal strength and its quality.</p><div class="project-link"><a href="https://github.com/swarooop795/Wifi_analyser.git" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> View on GitHub</a></div></div></section><section id="achievements"><h2>Achievements</h2><div class="card"><div class="achievement-header"><span class="achievement-title">Full Stack Development (MERN STACK with Bootstrap)</span><span class="achievement-date">April 2024–July 2024</span></div><p class="achievement-description">Successfully completed a Full Stack Development (MERN Stack with Bootstrap) organized by Technical Career Education in collaboration with Sahyadri College of Engineering &amp; Management, demonstrating Good performance.</p></div></section><section id="skills"><h2>Technical Skills</h2><div class="skills-container"><div class="skill-category"><h3>Software Languages</h3><div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">C</span><span class="skill-tag">Java</span><span class="skill-tag">HTML</span><span class="skill-tag">CSS</span></div></div><div class="skill-category"><h3>Frameworks/Tools</h3><div class="skill-tags"><span class="skill-tag">Flask</span><span class="skill-tag">Pandas</span><span class="skill-tag">Bootstrap</span><span class="skill-tag">LaTex</span><span class="skill-tag">Excel</span><span class="skill-tag">GitHub</span></div></div><div class="skill-category"><h3>Certifications</h3><div class="skill-tags"><span class="skill-tag">Cyber Security Foundation</span><span class="skill-tag">Python for Data Science</span><span class="skill-tag">JobReady Employability Skills</span></div></div></div></section><section id="additional-info"><h2>Additional Information</h2><div class="additional-info"><div class="info-section"><h3>Competitions</h3><ul class="info-list"><li>Participation – Techvision-2K25 (Sahyadri's flagship annual project exhibition)</li><li>Participation – Cybershield:Next-Gen Defense Against Evolving Threats (Institution's Innovation Council (IIC), mInDS - Dept.Students Association, ISTE, and IEI)</li></ul></div><div class="info-section"><h3>Languages</h3><ul class="info-list"><li>Kannada</li><li>English</li><li>Hindi</li></ul></div><div class="info-section"><h3>Interests</h3><ul class="info-list"><li>Cricket</li><li>Reading Books</li><li>Painting</li></ul></div></div></section></main><footer><div class="container"><p>© 2025 Swaroop Nairy. All rights reserved.</p></div></footer></div></div>
+    <script type="module" src="./Swaroop Nairy - Portfolio_files/main.tsx"></script>
+  
+</body></html>
